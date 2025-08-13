@@ -2,8 +2,13 @@ import React, { useContext, useState } from "react";
 import { IoMdEye, IoIosEyeOff } from "react-icons/io";
 import { useNavigate, useParams } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
+<<<<<<< HEAD
 import { authDataContext } from "../context/AuthDataContext.jsx";
 import { UserDataContext } from "../context/userContext.jsx";
+=======
+import { authDataContext } from "../Context/AuthDataContext.jsx";
+import { UserDataContext } from "../Context/userContext.jsx";
+>>>>>>> 6264aebd76817d72211ac64910b49d0d89812154
 import axios from "axios";
 
 function SignUp() {

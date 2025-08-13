@@ -41,7 +41,11 @@ function LogIn() {
         className="max-w-[900px] w-[90%] h-[600px] flex items-center justify-center flex-col flex-start gap-[10px]"
         onSubmit={handleLogin}
       >
+<<<<<<< HEAD
         <h1 >Welcome to Airbnb</h1>
+=======
+        <h1>Welcome to Airbnb</h1>
+>>>>>>> 6264aebd76817d72211ac64910b49d0d89812154
         <div className="w-[90%] flex items-start justify-start flex-col gap-[5px]">
           <label htmlFor="email" className="text-[20px]">
             Email
@@ -69,13 +73,21 @@ function LogIn() {
           ></input>
           {!show && (
             <IoIosEyeOff
+<<<<<<< HEAD
               className="w-[30px] h-[30px] absolute right-[5%] top-[55%] cursor-pointer"
+=======
+              className="w-[30px] h-[30px] absolute right-[8%] top-[50%] cursor-pointer"
+>>>>>>> 6264aebd76817d72211ac64910b49d0d89812154
               onClick={() => setshow((prev) => !prev)}
             />
           )}
           {show && (
             <IoMdEye
+<<<<<<< HEAD
               className="w-[30px] h-[30px] absolute right-[5%] top-[55%] cursor-pointer"
+=======
+              className="w-[30px] h-[30px] absolute right-[8%] top-[50%] cursor-pointer"
+>>>>>>> 6264aebd76817d72211ac64910b49d0d89812154
               onClick={() => setshow((prev) => !prev)}
             />
           )}

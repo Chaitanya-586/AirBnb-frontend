@@ -1,5 +1,9 @@
 import axios from 'axios';
+<<<<<<< HEAD
 import react,{ createContext, useContext, useState} from 'react'
+=======
+import React,{ createContext, useContext, useState} from 'react'
+>>>>>>> 6264aebd76817d72211ac64910b49d0d89812154
 import { authDataContext } from '../context/AuthDataContext.jsx';
 export const listingDataContext = createContext(); 
 

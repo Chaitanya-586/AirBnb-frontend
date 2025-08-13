@@ -33,7 +33,7 @@ function Nav() {
   return (
     <div className="fixed top-0 left-0 w-full bg-white z-[50]">
       {/* Top Navbar */}
-      <div className="w-full max-w-screen-xl mx-auto min-h-[80px] px-[2px] md:px-8 flex flex-wrap items-center justify-between border-b border-[#dcdcdc] gap-y-4 py-2">
+      <div className="w-full max-w-screen-xl mx-auto min-h-[80px] px-4 md:px-8 flex flex-wrap items-center justify-between border-b border-[#dcdcdc] gap-y-4 py-2">
         {/* Logo */}
         <div>
           <img src={logo} alt="logo" className="w-[100px] md:w-[130px]" />
@@ -44,25 +44,25 @@ function Nav() {
           <input
             type="text"
             className="flex-grow px-[35px] py-[12px] border border-[#bdbaba] rounded-full outline-none text-[16px] md:text-[18px]"
-            placeholder=" Anywhere   |     Any Location    |     Any City"
+            placeholder="    Anywhere    |         Any Location     |         Any City"
           />
-          <button className="p-[2px] md:p-[8px] bg-[red] rounded-full border-none">
-            <FiSearch className="text-[white] w-[25px] h-[25px]" />
+          <button className="p-[3px] md:p-[16px] bg-[red] rounded-full border-none">
+            <FiSearch className="text-[white] w-[30px] h-[25px]" />
           </button>
         </div>
 
         {/* Right Icons */}
-        <div className="flex items-center gap-[5px] md:gap-4 relative ">
+        <div className="flex items-center gap-[10px] md:gap-4 relative mr-[2.5rem]">
           <span
             className="hidden md:inline-block text-[15px] md:text-[18px] text-black cursor-pointer
-           hover:bg-[red] hover:text-white  py-[6px] rounded-full transition"
+           hover:bg-red-500 hover:text-white px-[14px] py-[12px] rounded-full transition"
             onClick={() => navigate("/ListingPage1")}
           >
             List your home
           </span>
 
           <button
-            className="flex items-center gap-[5px] px-[10px] py-[10px] border border-[#8d8c8c] rounded-full 
+            className="flex items-center gap-[5px] px-[15px] py-[10px] border border-[#8d8c8c] rounded-full 
             cursor-pointer hover:shadow-md transition-shadow"
             onClick={() => setShowpopup((prev) => !prev)}
           >

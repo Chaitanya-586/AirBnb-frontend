@@ -59,7 +59,7 @@ function ListingPage1() {
           className="w-[200px] h-[50px] text-[20px] bg-[#fd2a2a] text-[white] flex items-center justify-center rounded-[30px] 
         absolute top-[5%] right-[10px] shadow-lg"
         >
-          Set Up Your Home
+          SetUp Your Home
         </div>
 
         {/* Title input */}
@@ -89,7 +89,6 @@ function ListingPage1() {
             required
             onChange={(e) => setDescription(e.target.value)}
             value={description}
-            placeholder="Add Description here"
           ></textarea>
         </div>
         <div className="w-[90%] flex items-start justify-center flex-col gap-[10px]">
@@ -163,7 +162,7 @@ function ListingPage1() {
             required
             onChange={(e) => setCity(e.target.value)}
             value={city}
-            placeholder="City  country"
+            placeholder="city,country"
           />
         </div>
 
@@ -176,7 +175,6 @@ function ListingPage1() {
             id="landmark"
             className="w-[90%] h-[40px] border-[2px] border-[#555656] rounded-lg text-[18px] px-[20px]"
             required
-            placeholder="Place nerby"
             onChange={(e) => setLandmark(e.target.value)}
             value={landmark}
           />
