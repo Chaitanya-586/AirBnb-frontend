@@ -2,38 +2,37 @@ import React, { useContext, useState } from "react";
 import { IoMdEye, IoIosEyeOff } from "react-icons/io";
 import { useNavigate, useParams } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
-<<<<<<< HEAD
 import { authDataContext } from "../context/AuthDataContext.jsx";
 import { UserDataContext } from "../context/userContext.jsx";
-=======
-import { authDataContext } from "../Context/AuthDataContext.jsx";
-import { UserDataContext } from "../Context/userContext.jsx";
->>>>>>> 6264aebd76817d72211ac64910b49d0d89812154
 import axios from "axios";
 
 function SignUp() {
   let [show, setshow] = useState(false);
   let navigate = useNavigate();
-  let {userData, setUserData} = useContext(UserDataContext);  
+  let { userData, setUserData } = useContext(UserDataContext);
   let { serverUrl } = useContext(authDataContext);
   let [name, setName] = useState("");
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
   const handleSignUP = async (e) => {
     try {
-      e.preventDefault()
-      let result =await axios.post(serverUrl + "/api/auth/signup", {
-        name,
-        email,
-        password,
-      },{withCredentials:true})
+      e.preventDefault();
+      let result = await axios.post(
+        serverUrl + "/api/auth/signup",
+        {
+          name,
+          email,
+          password,
+        },
+        { withCredentials: true }
+      );
       setUserData(result.data);
       navigate("/");
       console.log(result);
     } catch (error) {
       console.log(error);
     }
-  }
+  };
   return (
     <div className="w-[100vw] h-[100vh] flex items-center justify-center relative">
       <div
@@ -100,8 +99,11 @@ function SignUp() {
             />
           )}
         </div>
-        <button className="px-[30px] mt-[20px] py-[10px] bg-[#ec0d0d] text-[white]
-         text-[20px]  border-none rounded-[0.75rem] cursor-pointer" onClick={handleSignUP}>
+        <button
+          className="px-[30px] mt-[20px] py-[10px] bg-[#ec0d0d] text-[white]
+         text-[20px]  border-none rounded-[0.75rem] cursor-pointer"
+          onClick={handleSignUP}
+        >
           Sign Up
         </button>
         <p className="text-[18px]">
